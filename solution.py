@@ -4,7 +4,7 @@ from scipy.stats import chi2
 
 chat_id = 356550601
 
-def solution(p, x):
+def solution(x: np.array) -> float:
     n = len(x)
     s = np.sqrt(np.sum(x**2) / (n - 1))
     alpha = 1 - p
