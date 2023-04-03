@@ -7,6 +7,6 @@ def solution(p: float, x: np.array) -> tuple:
     n = len(x)
     s = np.sqrt(np.sum(x**2) / (n - 1))
     alpha = 1 - p
-    left = np.sqrt((n - 1) * s**2 / chi2.ppf(1 - alpha / 2, n-1)) / 35 
-    right = np.sqrt((n - 1) * s**2 / chi2.ppf(alpha / 2, n-1)) / 35
+    left = np.sqrt((n - 1) * s**2 / chi2.ppf(1 - alpha / 2, n-1) / 35)
+    right = np.sqrt((n - 1) * s**2 / chi2.ppf(alpha / 2, n-1) / 35)
     return (left, right)
