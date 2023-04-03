@@ -1,7 +1,6 @@
 import numpy as np
 from scipy.stats import chi2
 
-
 chat_id = 356550601
 
 def solution(p: float, x: np.array) -> tuple:
